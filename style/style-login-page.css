@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0); /* Transparansi penuh */
+}
+
+
+.company-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.company-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px; /* Mengubah nilai margin-bottom untuk mendekatkan logo ke nama */
+}
+
+.company-name {
+    font-size: 24px;
+    color: white;
+    margin-top: -2; /* Menambahkan margin-top 0 untuk memastikan tidak ada jarak di atas nama */
+}
+
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a5bb8;
+}
+
+.extra-options {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.extra-options a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.extra-options a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.welcome-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome-container h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.welcome-container p {
+    font-size: 18px;
+    color: #666;
+}
+
+.welcome-container a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.welcome-container a:hover {
+    background-color: #1a5bb8;
+}

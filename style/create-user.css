@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.company-logo {
+    width: 150px; /* Ukuran logo sedikit lebih kecil untuk keseimbangan */
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px; /* Menjaga jarak antara logo dan nama */
+}
+
+.company-name {
+    font-size: 30px; /* Meningkatkan ukuran font untuk nama perusahaan */
+    color: white;
+    margin-top: 10px; /* Menambah jarak di atas nama */
+    font-weight: 700; /* Menambah ketebalan font */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Menambahkan efek bayangan yang lebih halus pada teks */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Membuat latar belakang sedikit transparan untuk efek lapisan */
+    padding: 40px; /* Menambah padding untuk ruang lebih */
+    border-radius: 20px; /* Membulatkan sudut lebih besar */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Membuat bayangan lebih halus dan lebih besar */
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Sedikit lebih besar untuk judul */
+    color: #333;
+    font-weight: 600; /* Menguatkan font untuk tampilan yang lebih profesional */
+}
+
+p {
+    margin-bottom: 25px; /* Menambah jarak di bawah paragraf */
+    color: #777; /* Mengubah warna teks menjadi lebih halus */
+    font-size: 15px; /* Meningkatkan ukuran font untuk keterbacaan */
+}
+
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px; /* Menambah padding untuk tombol */
+    background-color: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px; /* Membulatkan sudut tombol */
+    font-weight: 500; /* Menambah ketebalan font tombol */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Menambahkan efek transformasi */
+}
+
+a:hover {
+    background-color: #1a5bb8;
+    transform: translateY(-3px); /* Efek mengangkat saat hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

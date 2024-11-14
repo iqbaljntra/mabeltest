@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style/style-login-page.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <!-- Tambahkan Logo dan Nama Perusahaan -->
+        <div class="company-header">
+            <img src="image/7b0364d4-8f43-4c9c-8c0e-799ca609430f.png" alt="Company Logo" class="company-logo">
+            <h1 class="company-name">Mabel Solusi Mandiri</h1>
+        </div>
+
+        <div class="login-container">
+            <h2>Dashboard Sales</h2>
+            <p>Please login to your account</p>
+            <!-- Hanya perlu satu form -->
+            <form action="submit-login.php" method="POST">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>            
+            <div class="extra-options">
+                <!-- Tambahkan pilihan tambahan seperti lupa password atau registrasi di sini -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

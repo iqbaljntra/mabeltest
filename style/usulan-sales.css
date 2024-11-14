@@ -1,0 +1,113 @@
+/* user-dashboard.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5; /* Background halaman */
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+.usulan-wrapper {
+    max-width: 800px; /* Lebar maksimal untuk kontainer */
+    margin: 30px auto; /* Mengatur margin */
+    background-color: white; /* Background kontainer */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    padding: 20px;
+}
+
+.company-header {
+    text-align: center; /* Pusatkan teks */
+}
+
+.company-logo {
+    max-width: 100%; /* Logo responsif */
+    height: auto;
+}
+
+.company-name {
+    font-size: 24px; /* Ukuran font nama perusahaan */
+    margin: 10px 0;
+}
+
+.usulan-container {
+    margin-top: 20px; /* Margin atas kontainer usulan */
+}
+
+h2 {
+    color: #333; /* Warna teks heading */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Jarak antar input */
+}
+
+.label {
+    font-weight: bold; /* Teks label tebal */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* Lebar input penuh */
+    padding: 10px; /* Jarak dalam input */
+    border: 1px solid #ccc; /* Warna border */
+    border-radius: 4px; /* Sudut membulat */
+    box-sizing: border-box; /* Menghitung padding dalam lebar total */
+}
+
+input[type="file"] {
+    padding: 10px; /* Jarak dalam input file */
+}
+
+button {
+    background-color: #4CAF50; /* Warna background tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tanpa border */
+    padding: 10px 15px; /* Padding tombol */
+    text-align: center; /* Pusatkan teks */
+    text-decoration: none; /* Tanpa garis bawah */
+    display: inline-block; /* Membuat tombol inline */
+    font-size: 16px; /* Ukuran font tombol */
+    margin-top: 10px; /* Jarak atas tombol */
+    border-radius: 4px; /* Sudut membulat tombol */
+    cursor: pointer; /* Kursor pointer saat hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna saat hover */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+input[type="file"] {
+    border: none; /* Menghilangkan border default */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.product-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Gaya untuk tombol tambah item */
+button#add-item {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#add-item:hover {
+    background-color: #0056b3;
+}

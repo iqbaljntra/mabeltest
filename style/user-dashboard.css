@@ -1,0 +1,433 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 75px;
+    padding: 20px;
+    color: #333; /* Mengubah warna teks menjadi lebih gelap agar lebih mudah dibaca */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usulan-wrapper {
+    max-width: 800px; /* Lebar maksimal untuk kontainer */
+    margin: 30px auto; /* Mengatur margin */
+    background-color: white; /* Background kontainer */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    padding: 20px;
+}
+
+.company-header {
+    text-align: center; /* Pusatkan teks */
+}
+
+.company-logo {
+    max-width: 100%; /* Logo responsif */
+    height: auto;
+}
+
+.company-name {
+    font-size: 24px; /* Ukuran font nama perusahaan */
+    margin: 10px 0;
+}
+
+.usulan-container {
+    margin-top: 20px; /* Margin atas kontainer usulan */
+}
+
+h2 {
+    color: #333; /* Warna teks heading */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Jarak antar input */
+}
+
+.label {
+    font-weight: bold; /* Teks label tebal */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* Lebar input penuh */
+    padding: 10px; /* Jarak dalam input */
+    border: 1px solid #ccc; /* Warna border */
+    border-radius: 4px; /* Sudut membulat */
+    box-sizing: border-box; /* Menghitung padding dalam lebar total */
+}
+
+input[type="file"] {
+    padding: 10px; /* Jarak dalam input file */
+}
+
+button {
+    background-color: #4CAF50; /* Warna background tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tanpa border */
+    padding: 10px 15px; /* Padding tombol */
+    text-align: center; /* Pusatkan teks */
+    text-decoration: none; /* Tanpa garis bawah */
+    display: inline-block; /* Membuat tombol inline */
+    font-size: 16px; /* Ukuran font tombol */
+    margin-top: 10px; /* Jarak atas tombol */
+    border-radius: 4px; /* Sudut membulat tombol */
+    cursor: pointer; /* Kursor pointer saat hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna saat hover */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+input[type="file"] {
+    border: none; /* Menghilangkan border default */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.product-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Gaya untuk tombol tambah item */
+button#add-item {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#add-item:hover {
+    background-color: #0056b3;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+/* Dashboard Wrapper */
+.dashboard-wrapper {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow-x: auto; /* Menambahkan scroll horizontal untuk tabel */
+}
+
+/* Tabel Usulan Sales */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Ubah warna garis pembatas tabel */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    padding-bottom: 10px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    min-width: 600px;
+    table-layout: auto;
+    background-color: #fff; /* Pastikan latar belakang tabel putih */
+}
+
+/* Menambahkan warna pada baris ganjil dan genap */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Hover pada baris tabel */
+tr:hover {
+    background-color: #ecf0f1;
+    cursor: pointer;
+    transform: scale(1.02); /* Menambahkan efek zoom ringan saat hover */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ikon dalam tabel */
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8; /* Memberikan efek opacity saat ikon di-hover */
+}
+
+/* Menambahkan garis pembatas pada setiap kolom tabel */
+th, td {
+    border: 1px solid #ddd; /* Menambahkan garis pembatas di setiap kolom */
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Menambahkan efek untuk header tabel */
+th {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px; /* Padding lebih kecil pada layar kecil */
+    }
+}
+
+
+tr:hover {
+    background-color: #ecf0f1;
+    cursor: pointer;
+}
+
+/* Ikon dalam tabel */
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    table {
+        font-size: 13px; /* Ukuran font lebih kecil pada layar kecil */
+    }
+
+    th, td {
+        padding: 10px; /* Padding lebih kecil pada layar kecil */
+    }
+
+    .pagination a {
+        padding: 8px 10px;
+    }
+
+    .download-container input[type="date"] {
+        padding: 8px;
+        margin-right: 12px;
+    }
+}
+
+/* Button Styles */
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* Download Container */
+.download-container {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.download-container h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.download-container input[type="date"] {
+    padding: 8px;
+    margin-right: 15px;
+}
+
+/* Download CSV Button */
+.download-csv-button {
+    background-color: #0487ac;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.download-csv-button:hover {
+    background-color: #45a049;
+}
+
+/* Magnify Icon */
+.magnify-icon img {
+    transition: filter 0.3s ease;
+}
+
+.magnify-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(96%) saturate(500%) hue-rotate(89deg) brightness(95%) contrast(85%);
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 600;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination a:active {
+    background-color: #bbb;
+}
+
+.pagination a.current {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 8% auto;
+    padding: 25px;
+    border-radius: 8px;
+    width: 85%;
+    max-width: 900px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+/* Style untuk container tombol */
+.add-product {
+    display: flex;
+    justify-content: flex-start; /* Posisi tombol ke kiri */
+    margin-top: 20px;
+}
+
+/* Style untuk tombol */
+.btn-add-product {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Animasi saat hover */
+}
+
+/* Efek saat hover */
+.btn-add-product:hover {
+    background-color: #45a049; /* Sedikit lebih gelap saat hover */
+    cursor: pointer;
+}
+
+/* Efek saat tombol ditekan */
+.btn-add-product:active {
+    background-color: #3e8e41; /* Lebih gelap saat ditekan */
+}
+
+/* Tambahkan efek bayangan */
+.btn-add-product {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add-product:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
